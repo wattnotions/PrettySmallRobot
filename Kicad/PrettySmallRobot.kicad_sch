@@ -2734,7 +2734,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3c6b0d4e-fccc-417e-bf34-f237c07621e0)
     (property "Reference" "J1" (id 0) (at 49.53 17.78 0))
-    (property "Value" "TYPE-C-31-M-12" (id 1) (at 49.53 20.32 0))
+    (property "Value" "" (id 1) (at 49.53 20.32 0))
     (property "Footprint" "" (id 2) (at 10.16 29.21 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
@@ -4386,16 +4386,16 @@
       (reference "D4") (unit 1) (value "USR_LED") (footprint "LED_SMD:LED_0402_1005Metric")
     )
     (path "/3c6b0d4e-fccc-417e-bf34-f237c07621e0"
-      (reference "J1") (unit 1) (value "TYPE-C-31-M-12") (footprint "")
+      (reference "J1") (unit 1) (value "TYPE-C-31-M-12") (footprint "kicad_footprints:HRO_TYPE-C-31-M-12")
     )
     (path "/3df40196-e4fa-42be-bb30-c5850f257a4a"
-      (reference "J2") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "")
+      (reference "J2") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal")
     )
     (path "/8c3a71db-8570-4a26-8abb-7b253c8386f5"
-      (reference "J3") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "")
+      (reference "J3") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal")
     )
     (path "/6502a99f-049b-4441-92af-fda3c2641b16"
-      (reference "J4") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "")
+      (reference "J4") (unit 1) (value "S2B-PH-K-S(LF)(SN)") (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal")
     )
     (path "/705dc02d-e1e2-48cd-b58e-8d1e3dfceb42"
       (reference "L1") (unit 1) (value "2nH") (footprint "Inductor_SMD:L_0402_1005Metric")
@@ -4404,10 +4404,10 @@
       (reference "L2") (unit 1) (value "1.8nH") (footprint "Inductor_SMD:L_0402_1005Metric")
     )
     (path "/c2b6c29a-adcf-4ce5-9e2c-65b7d310e409"
-      (reference "R1") (unit 1) (value "5.1k") (footprint "")
+      (reference "R1") (unit 1) (value "5.1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/4d1d0761-a5e1-4fb0-adbf-44f9db81663e"
-      (reference "R2") (unit 1) (value "5.1k") (footprint "")
+      (reference "R2") (unit 1) (value "5.1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/902cfec7-3443-4279-8dd8-065ea8652f37"
       (reference "R3") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -4452,7 +4452,7 @@
       (reference "U5") (unit 1) (value "AP2111H-3.3TRG1") (footprint "Package_TO_SOT_SMD:SOT-223")
     )
     (path "/ec3bc84a-5d87-4c22-9f05-f70570e3810f"
-      (reference "Y1") (unit 1) (value "12pf/40MHz") (footprint "")
+      (reference "Y1") (unit 1) (value "12pf/40MHz") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
     )
   )
 )
