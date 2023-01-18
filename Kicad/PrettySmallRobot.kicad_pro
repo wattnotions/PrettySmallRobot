@@ -55,7 +55,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "track_dangling|127550000|100150000|2439c3f1-4d94-47a8-8282-22f1ac313a19|00000000-0000-0000-0000-000000000000",
+        "track_dangling|131975000|106700000|d9e12259-1c79-4179-bdeb-fd9e369c9a27|00000000-0000-0000-0000-000000000000",
+        "track_dangling|135400000|99560000|53799d3d-8cca-4cfd-8226-ca258bb97d7d|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -63,7 +67,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -85,8 +89,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -103,15 +107,15 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.13499999999999998,
+        "min_clearance": 0.127,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.13499999999999998,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.35,
         "solder_mask_clearance": 0.0,
@@ -123,6 +127,7 @@
         0.127,
         0.15,
         0.175,
+        0.254,
         0.29337
       ],
       "via_dimensions": [
@@ -132,6 +137,14 @@
         },
         {
           "diameter": 0.35,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.46,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.5,
           "drill": 0.2
         }
       ],
@@ -489,7 +502,7 @@
       "idf": "",
       "netlist": "PrettySmallRobot.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "PrettySmallRobot.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
