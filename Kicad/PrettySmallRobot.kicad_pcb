@@ -3982,7 +3982,7 @@
       (xy 184.02914 100.180752)
       (xy 184.129503 100.179194)
     ) (layer "F.SilkS") (width 0.1) (fill solid) (tstamp f5ac329c-95ea-48c5-9244-62ed4cc1086d))
-  (gr_rect (start 170.55 97.5) (end 197.55 126.5) (layer "Edge.Cuts") (width 0.2) (fill none) (tstamp bb3adeee-1a92-483a-ace7-e1ef71d12c76))
+  (gr_rect (start 171.05 97.5) (end 197.05 126.5) (layer "Edge.Cuts") (width 0.2) (fill none) (tstamp bb3adeee-1a92-483a-ace7-e1ef71d12c76))
   (gr_circle (center 176.5 107.65) (end 176.6 107.65) (layer "F.Fab") (width 0.1) (fill none) (tstamp 05ddd8a7-b95f-43e8-9fa6-fa171ee6a8f7))
   (gr_text "Mounting Clip" (at 183.55 127) (layer "Cmts.User") (tstamp 20d9de0a-50e2-44a6-953f-516d2abf327d)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
