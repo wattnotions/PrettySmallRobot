@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 31,
-    "active_layer_preset": "",
+    "active_layer": 0,
+    "active_layer_preset": "all_no_text",
     "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -60,8 +60,8 @@
       35,
       36
     ],
-    "visible_layers": "fffefff_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "fffffff_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "PrettySmallRobot.kicad_prl",
