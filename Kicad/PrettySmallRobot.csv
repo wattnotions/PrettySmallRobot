@@ -28,3 +28,4 @@ Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,LCSC,MANUFACTURER,PARTRE
 34,1,U6,AP2112K-3.3,Regulator_Linear:AP2112K-3.3,Package_TO_SOT_SMD:SOT-23-5,https://www.diodes.com/assets/Datasheets/AP2112.pdf,C3021085,,,,
 35,1,Y1,12pF/40MHz,Device:Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,~,C252255,,,,
 30,2,RST1,SW_Push,Switch:SW_Push,Button_Switch_SMD:SW_SPST_B3U-1000P,~,C231329,,,,
+31,3,"J8, J9, J10",JST,,JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,,C173752,,,,
