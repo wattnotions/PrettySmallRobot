@@ -23,7 +23,7 @@ Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,LCSC,MANUFACTURER,PARTRE
 29,1,R10,1K,Device:R_Small,Resistor_SMD:R_0402_1005Metric,~,,,,,
 30,2,BOOT1,SW_Push,Switch:SW_Push,Button_Switch_SMD:SW_SPST_B3U-1000P,~,C231329,,,,
 31,2,"U1, U2",DRV8837,Driver_Motor:DRV8837,Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,http://www.ti.com/lit/ds/symlink/drv8837.pdf,    C191000,,,,
-32,1,U3,MCP73831-2ACI_MC,FSB-rescue:MCP73831-2ACI_MC-Kicad_symbols,kicad_footprints:SON50P200X300X100-9N,,C424093,MICROCHIP,G,,IPC 7351B
+32,1,U3,MCP73831-2ACI_MC,FSB-rescue:MCP73831-2ACI_MC-Kicad_symbols,kicad_footprints:SON50P200X300X100-9N,,C150772,MICROCHIP,G,,IPC 7351B
 33,1,U4,ESP32-S2,Espressif:ESP32-S2,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm,https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf,C529594,,,,
 34,1,U6,AP2112K-3.3,Regulator_Linear:AP2112K-3.3,Package_TO_SOT_SMD:SOT-23-5,https://www.diodes.com/assets/Datasheets/AP2112.pdf,C3021085,,,,
 35,1,Y1,12pF/40MHz,Device:Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,~,C252255,,,,
