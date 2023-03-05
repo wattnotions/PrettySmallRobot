@@ -3507,8 +3507,8 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8bff7f3c-8391-47bd-8438-7e4af69ca5f3)
     (property "Reference" "U4" (id 0) (at 162.56 64.77 0))
-    (property "Value" "ESP32-S2" (id 1) (at 162.56 67.31 0))
-    (property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm" (id 2) (at 161.29 161.29 0)
+    (property "Value" "" (id 1) (at 162.56 67.31 0))
+    (property "Footprint" "" (id 2) (at 161.29 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf" (id 3) (at 161.29 163.83 0)
@@ -4574,7 +4574,7 @@
       (reference "U3") (unit 1) (value "MCP73831-2ACI_MC") (footprint "kicad_footprints:SON50P200X300X100-9N")
     )
     (path "/8bff7f3c-8391-47bd-8438-7e4af69ca5f3"
-      (reference "U4") (unit 1) (value "ESP32-S2") (footprint "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm")
+      (reference "U4") (unit 1) (value "ESP32-S2FN4R2") (footprint "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm")
     )
     (path "/1f286913-efd4-4446-a7df-9b5ef97d915e"
       (reference "U6") (unit 1) (value "AP2112K-3.3") (footprint "Package_TO_SOT_SMD:SOT-23-5")

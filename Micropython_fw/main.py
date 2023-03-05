@@ -1,5 +1,8 @@
 import machine
 import time
+from umqtt.robust import MQTTClient
+
+
 
 led = machine.Pin(37, machine.Pin.OUT)
 
@@ -31,6 +34,10 @@ def right_track_dir(dir):
 def straight():
     left_track_dir(1)
     right_track_dir(1)
+
+def reverse():
+    left_track_dir(0)
+    right_track_dir(0)
     
 def right():
     left_track_dir(1)
@@ -58,41 +65,90 @@ def do_connect():
     print('network config:', sta_if.ifconfig())
 
 
-i=0
-motor_script=False
 
-while True:
-    if but.value()==0:
-        led.on()
-        motor_script=True
-    else:
-        led.off()
-        
-    if motor_script==True:
-        straight()
-        time.sleep(2)
-        right()
-        time.sleep(2)
-        
-        straight()
-        time.sleep(2)
-        right()
-        time.sleep(2)
-        
-        straight()
-        time.sleep(2)
-        right()
-        time.sleep(2)
-        
-        straight()
-        time.sleep(2)
-        right()
-        time.sleep(2)
-        
-        motors_off()
-        motor_script=False
+def motor_test():
+    i=0
+    motor_script=False
+    while True:
+        if but.value()==0:
+            led.on()
+            motor_script=True
+        else:
+            led.off()
+            
+        if motor_script==True:
+            straight()
+            time.sleep(2)
+            right()
+            time.sleep(2)
+            
+            straight()
+            time.sleep(2)
+            right()
+            time.sleep(2)
+            
+            straight()
+            time.sleep(2)
+            right()
+            time.sleep(2)
+            
+            straight()
+            time.sleep(2)
+            right()
+            time.sleep(2)
+            
+            motors_off()
+            motor_script=False
 
     
 
 
+def mqtt_send():
+    c = MQTTClient("", 'raspberrypi.local', user='', password='')
+    c.connect()
+    while True:
 
+        
+        c.publish(b"testTopic", b'Howiye')
+        print("Sent howiye")
+        time.sleep(10)
+        
+    
+def sub_cb(topic, msg):
+    print((topic, msg))
+    if msg==b"l":
+        left()
+    if msg==b"r":
+        right()
+    if msg==b"u":
+        straight()
+    if msg==b"d":
+        reverse()
+    if msg==b"s":
+        motors_off()
+    
+def mqtt_receive():
+    c = MQTTClient("", 'raspberrypi.local', user='', password='')
+    c.connect()
+    c.DEBUG = True
+    c.set_callback(sub_cb)
+    
+    print("New session being set up")
+    c.subscribe(b"testTopic")
+    
+    while 1:
+        c.wait_msg()
+
+    c.disconnect()
+
+led.off()
+motors_off()
+while(but.value()==1):
+    pass
+
+led.on()
+do_connect()
+mqtt_receive()
+    
+    
+    
