@@ -3,7 +3,7 @@ import paho.mqtt.client as paho
 
 import serial
 
-ser=serial.Serial('COM7')  # open serial port
+ser=serial.Serial('COM9')  # open serial port
 
 broker="raspberrypi.local"
 port=1883
@@ -19,6 +19,7 @@ shift_down=0
 accel=0
 brake=0
 wheel=0
+send=0
 
 
 while True:
@@ -39,19 +40,23 @@ while True:
     
     
     if shift_up_old != shift_up:
-        ret = client1.publish("testTopic","s_up,"+shift_up)
+        send=1
         
     if shift_down_old != shift_down:
-        ret = client1.publish("testTopic","s_down,"+shift_down)
+        send=1
         
     if accel_old != accel:
-        ret = client1.publish("testTopic","accel,"+accel)
+        send=1
     
     if brake_old != brake:
-        ret = client1.publish("testTopic","brake,"+brake)
+        send=1
         
     if wheel_old != wheel:
-        ret = client1.publish("testTopic","wheel,"+wheel)
+        send=1
+        
+    if send==1:
+        ret= client1.publish("testTopic",line)
+        send=0
     
 
     
