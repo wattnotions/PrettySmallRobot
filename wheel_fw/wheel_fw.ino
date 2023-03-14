@@ -41,14 +41,14 @@ void loop() {
   Serial.print(",");
 
   int accel_val = analogRead(accel_pin);
-  if (accel_val < 200) accel_val=1;
+  if (accel_val < 100) accel_val=1;
   else accel_val=0;
   Serial.print(accel_val);
   Serial.print(",");
 
 
   int brake_val = analogRead(brake_pin);
-  if (brake_val < 200) brake_val=1;
+  if (brake_val < 100) brake_val=1;
   else brake_val=0;
   Serial.print(brake_val);
   Serial.print(",");
