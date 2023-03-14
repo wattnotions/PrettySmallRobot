@@ -2,6 +2,7 @@
 import paho.mqtt.client as paho
 
 import serial
+import time
 
 ser=serial.Serial('COM9')  # open serial port
 
@@ -9,6 +10,7 @@ broker="raspberrypi.local"
 port=1883
 def on_publish(client,userdata,result):             #create function for callback
     print("data published \n")
+    print(time.ctime())
     pass
 client1= paho.Client("control1")                           #create client object
 client1.on_publish = on_publish                          #assign function to callback
