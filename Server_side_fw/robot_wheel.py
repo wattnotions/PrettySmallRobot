@@ -4,7 +4,7 @@ import paho.mqtt.client as paho
 import serial
 import time
 
-ser=serial.Serial('COM9')  # open serial port
+ser=serial.Serial('COM7')  # open serial port
 
 broker="raspberrypi.local"
 port=1883
